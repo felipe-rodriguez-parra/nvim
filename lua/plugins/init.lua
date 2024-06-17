@@ -2,7 +2,7 @@ return {
   {"michaelrommel/nvim-silicon", lazy = true, cmd = "Silicon", config = function() require("silicon").setup({ font = "JetBrainsMono Nerd Font=34; Noto Color Emoji=34" }) end },
     {
       "stevearc/conform.nvim",
-      event = 'BufWritePre', -- uncomment for format on save
+      -- event = 'BufWritePre', -- uncomment for format on save
       config = function()
         require "configs.conform"
       end,
